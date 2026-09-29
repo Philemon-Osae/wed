@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakatel & Juliet - Official Invite</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@400&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0B2318;height:100vh;overflow:hidden}
+#page1{position:fixed;inset:0;z-index:10;background:#0B2318;display:flex;align-items:center;justify-content:center;transition:transform 1.4s cubic-bezier(.77,0,.175,1)}
+.outer{width:96%;max-width:1080px;height:92vh;background:linear-gradient(90deg,#ff7a45,#ffde59,#7ed321);padding:7px}
+.mid{width:100%;height:100%;background:linear-gradient(90deg,#ff9a4a,#ffe259,#a8e063);padding:5px}
+.inner{width:100%;height:100%;background:#FFFBF0;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+.inner::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200') center/cover;opacity:.22}
+.rings{position:absolute;width:260px;height:260px;left:52%;top:50%;transform:translate(-50%,-45%);background:url('https://images.unsplash.com/photo-1603561596112-0a132b757442?q=80&w=600') center/cover;border-radius:50%;opacity:.9}
+.topT{font-family:'Dancing Script',cursive;color:#FF8FA3;z-index:1;letter-spacing:2px}
+.n1{font-family:'Great Vibes',cursive;font-size:72px;color:#0B2E1E;z-index:1;transform:rotate(-3deg);margin-top:15px;line-height:.9}
+.n2{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:700;color:#0B2E1E;z-index:1;margin-top:-5px}
+.curved{font-family:'Dancing Script',cursive;color:#8B6A3D;z-index:1;margin-top:12px;transform:rotate(5deg);font-size:20px}
+.tap{position:absolute;bottom:20px;background:#0B2E1E;color:#fff;border:none;padding:9px 20px;border-radius:8px;text-decoration:underline;cursor:pointer;z-index:2;font-weight:600}
+#trans{position:fixed;inset:0;z-index:20;display:none;background:#FFFEF9;place-items:center}
+.goldBar{position:absolute;inset:0;background:linear-gradient(90deg,#C9A86A,#E8D5A8,#C9A86A);transform:translateX(-100%);animation:sl 1.3s forwards}
+@keyframes sl{50%{transform:translateX(0)}100%{transform:translateX(100%)}}
+.hrt{position:absolute;left:50%;top:60%;animation:fly 1.6s forwards}
+@keyframes fly{0%{transform:translate(-50%,0) scale(0);opacity:0}20%{opacity:1}100%{transform:translate(calc(-50% + var(--x)),-110vh) scale(1.4);opacity:0}}
+#page2{position:fixed;inset:0;background:#FFFEF9;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.7s;overflow:auto;padding:18px}
+#page2.on{opacity:1;pointer-events:all}
+.cardWrap{width:100%;max-width:950px;display:flex;background:#FFFEF9;border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.18);min-height:560px}
+.left{flex:1;background:#FFFEF9;padding:22px 22px;overflow:auto}
+.save{font-family:'Cormorant Garamond',serif;font-size:26px;color:#8FA998;font-weight:600}
+.sub{font-size:10px;color:#6B7F6F;margin:2px 0 12px;font-weight:600}
+.countdown{display:flex;gap:8px;margin-bottom:12px;max-width:380px}
+.cd{background:#8FA998!important;color:white!important;border-radius:10px;padding:8px 2px;text-align:center;flex:1}
+.cd b{display:block;font-size:15px}.cd i{font-style:normal;font-size:8px;display:block;opacity:.9}
+.decRow{display:flex;align-items:center;justify-content:center;gap:8px;color:#8FA998;font-family:'Great Vibes',cursive;font-size:22px;margin:8px 0}
+.decRow::before,.decRow::after{content:'❧';font-size:12px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);font-size:8px;text-align:center;color:#8FA998;font-weight:600;padding:3px 0}
+.cal{border:1px solid #E8E0D0;border-radius:4px;display:grid;grid-template-columns:repeat(7,1fr);overflow:hidden;max-width:380px}
+.cal div{padding:5px 1px;text-align:center;font-size:9px;color:#5A6B59;border:.3px solid #F0EADF}
+.circ{position:relative;font-weight:800;background:white}.circ::after{content:'';position:absolute;inset:2px;border:1.5px solid #6B7F6F;border-radius:50%}
+.info{margin-top:10px;display:flex;gap:6px;font-size:10px;color:#6B7F6F;align-items:center}
+.photoWrap{display:flex;justify-content:center;margin:18px 0 10px}
+.coupleCircle{width:280px;height:280px;border-radius:50%;border:4px solid #E8D5A8;overflow:hidden;background:#8FA998;box-shadow:0 8px 25px rgba(0,0,0,.12)}
+.coupleCircle img{width:100%;height:100%;object-fit:cover;display:block}
+.footerText{font-family:'Dancing Script',cursive;text-align:center;color:#6B7F6F;font-size:13px;line-height:1.4;margin-top:8px;font-style:italic}
+.right{flex:.85;background:#6B7F6F!important;padding:22px;display:flex;flex-direction:column;justify-content:center}
+.right h3{font-family:'Cormorant Garamond',serif;color:#E8D5A8;text-align:center;font-size:21px}
+.right p{color:rgba(255,255,255,.7);text-align:center;font-size:9px;margin:6px 0 16px;line-height:1.4}
+.right input,.right textarea{width:100%;background:#FFFEF9;border:none;border-radius:20px;padding:10px 14px;font-size:11px;margin-bottom:10px;outline:none}
+.right button{background:#E8D5A8!important;color:#4A5A4B!important;border:none;padding:9px;border-radius:20px;font-size:11px;font-weight:700;width:55%;margin:8px auto 0;display:block;cursor:pointer}
+.hearts{color:#E8D5A8;text-align:center;margin-top:10px;font-size:10px;letter-spacing:2px}
+.list{margin-top:12px;max-height:110px;overflow:auto;display:flex;flex-direction:column;gap:6px}
+.cardItem{background:rgba(255,255,255,.15);border-left:3px solid #E8D5A8;padding:7px 9px;border-radius:6px;color:white;font-size:10px}
+#backBtn{position:fixed;right:18px;bottom:18px;background:#0B2E1E;color:#fff;border:none;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600;z-index:30;display:none}
+#page2.on ~ #backBtn{display:block}
+@media(max-width:850px){.cardWrap{flex-direction:column}.coupleCircle{width:240px;height:240px}.n1{font-size:50px}.n2{font-size:36px}}
+</style>
+</head>
+<body>
+<div id="page1">
+  <div class="outer"><div class="mid"><div class="inner">
+    <div class="rings"></div>
+    <div class="topT">A WEDDING CELEBRATION</div>
+    <div class="n2">BAKATEL &</div>
+    <div class="n1">Juliet</div>
+    <div class="curved">Are getting married!!!</div>
+    <button class="tap" onclick="go()">Tap to open..</button>
+  </div></div></div>
+</div>
+<div id="trans"><div class="goldBar"></div></div>
+<div id="page2">
+  <div class="cardWrap">
+    <div class="left">
+      <div class="save">SAVE THE DATE</div>
+      <div class="sub">Counting down to forever</div>
+      <div class="countdown">
+        <div class="cd"><b id="d">00</b><i>Days</i></div>
+        <div class="cd"><b id="h">00</b><i>Hours</i></div>
+        <div class="cd"><b id="m">00</b><i>Mins</i></div>
+        <div class="cd"><b id="s">00</b><i>Secs</i></div>
+      </div>
+      <div class="decRow">December</div>
+      <div class="week"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      <div class="cal"><div>1</div><div>2</div><div>3</div><div>4</div><div class="circ">5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div></div>
+      <div class="info">🕘 10:00 am</div>
+      <div class="info">📍 New Creation Chapel Int., Kratos - Temple, Suhum</div>
+      <div class="photoWrap"><div class="coupleCircle"><img id="couplePhoto" src="wed.png" alt="Couple Hands"></div></div>
+      <div class="footerText">Your presence would make our day even more special.<br>Formal invitation to follow.</div>
+    </div>
+    <div class="right">
+      <h3>Share Your Wishes</h3>
+      <p>Leave a sweet note for the couple to read on<br>their special day</p>
+      <input id="n" placeholder="Enter your name..."><textarea id="msg" rows="3" placeholder="Share your wishes, advice, or love..."></textarea>
+      <button onclick="add()">Send Wishes</button>
+      <div class="hearts">♥ ♥ ♥</div>
+      <div class="list" id="list"></div>
+    </div>
+  </div>
+</div>
+<button id="backBtn"><<<</button>
+<script>
+function go(){
+  let t=document.getElementById('trans');t.style.display='grid';
+  for(let i=0;i<16;i++){let e=document.createElement('div');e.className='hrt';e.textContent=['🌿','💚','✨','💛'][i%4];e.style.setProperty('--x',(Math.random()*400-200)+'px');e.style.left=(45+Math.random()*10)+'%';e.style.animationDelay=(i*0.07)+'s';t.appendChild(e);}
+  setTimeout(()=>{document.getElementById('page1').style.transform='translateY(-115%)';document.getElementById('page2').classList.add('on');setTimeout(()=>{t.style.display='none';t.innerHTML='<div class="goldBar"></div>'},800)},1300);
+}
+const target=new Date("December 5, 2026 10:00:00").getTime();
+setInterval(()=>{let now=new Date().getTime(),diff=target-now;if(diff<0)diff=0;document.getElementById('d').innerText=Math.floor(diff/86400000);document.getElementById('h').innerText=String(Math.floor(diff%86400000/3600000)).padStart(2,'0');document.getElementById('m').innerText=String(Math.floor(diff%3600000/60000)).padStart(2,'0');document.getElementById('s').innerText=String(Math.floor(diff%60000/1000)).padStart(2,'0');},1000);
+function add(){let n=document.getElementById('n').value.trim(),m=document.getElementById('msg').value.trim();if(!n||!m)return alert('Enter name & wish');let a=JSON.parse(localStorage.getItem('final_complete')||'[]');a.unshift({n,m});localStorage.setItem('final_complete',JSON.stringify(a));document.getElementById('n').value='';document.getElementById('msg').value='';render();}
+function render(){let a=JSON.parse(localStorage.getItem('final_complete')||'[]');document.getElementById('list').innerHTML=a.map(x=>`<div class="cardItem"><b style="color:#E8D5A8">${x.n}</b><br>${x.m}</div>`).join('')||''}render();
+document.getElementById('backBtn').addEventListener('click',()=>{
+  document.getElementById('page2').classList.remove('on');
+  document.getElementById('page1').style.transform='translateY(0)';
+});
+</script>
+</body>
+</html>
