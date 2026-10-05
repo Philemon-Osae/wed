@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bakatel & Juliet - Official Invite</title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@400&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@400&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:#0B2318;height:100vh;overflow:hidden}
@@ -15,6 +15,7 @@ body{font-family:'Poppins',sans-serif;background:#0B2318;height:100vh;overflow:h
 .inner::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200') center/cover;opacity:.22}
 .rings{position:absolute;width:260px;height:260px;left:52%;top:50%;transform:translate(-50%,-45%);background:url('https://images.unsplash.com/photo-1603561596112-0a132b757442?q=80&w=600') center/cover;border-radius:50%;opacity:.9}
 .topT{font-family:'Dancing Script',cursive;color:#FF8FA3;z-index:1;letter-spacing:2px}
+.dear{font-family:'Dancing Script',cursive;color:#8B6A3D;z-index:1;font-size:22px;margin-bottom:6px}
 .n1{font-family:'Great Vibes',cursive;font-size:72px;color:#0B2E1E;z-index:1;transform:rotate(-3deg);margin-top:15px;line-height:.9}
 .n2{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:700;color:#0B2E1E;z-index:1;margin-top:-5px}
 .curved{font-family:'Dancing Script',cursive;color:#8B6A3D;z-index:1;margin-top:12px;transform:rotate(5deg);font-size:20px}
@@ -24,51 +25,78 @@ body{font-family:'Poppins',sans-serif;background:#0B2318;height:100vh;overflow:h
 @keyframes sl{50%{transform:translateX(0)}100%{transform:translateX(100%)}}
 .hrt{position:absolute;left:50%;top:60%;animation:fly 1.6s forwards}
 @keyframes fly{0%{transform:translate(-50%,0) scale(0);opacity:0}20%{opacity:1}100%{transform:translate(calc(-50% + var(--x)),-110vh) scale(1.4);opacity:0}}
-#page2{position:fixed;inset:0;background:#FFFEF9;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.7s;overflow:auto;padding:18px}
+#page2{position:fixed;inset:0;background:#FFFEF9;display:flex;align-items:flex-start;justify-content:center;opacity:0;pointer-events:none;transition:.7s;overflow:auto;padding:18px}
 #page2.on{opacity:1;pointer-events:all}
-.cardWrap{width:100%;max-width:950px;display:flex;background:#FFFEF9;border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.18);min-height:560px}
-.left{flex:1;background:#FFFEF9;padding:22px 22px;overflow:auto}
+.cardWrap{width:100%;max-width:950px;display:flex;background:#FFFEF9;border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.18);min-height:560px;margin:auto}
+.left{flex:1;background:#FFFEF9;padding:22px}
 .save{font-family:'Cormorant Garamond',serif;font-size:26px;color:#8FA998;font-weight:600}
 .sub{font-size:10px;color:#6B7F6F;margin:2px 0 12px;font-weight:600}
 .countdown{display:flex;gap:8px;margin-bottom:12px;max-width:380px}
-.cd{background:#8FA998!important;color:white!important;border-radius:10px;padding:8px 2px;text-align:center;flex:1}
+.cd{background:#8FA998;color:#fff;border-radius:10px;padding:8px 2px;text-align:center;flex:1}
 .cd b{display:block;font-size:15px}.cd i{font-style:normal;font-size:8px;display:block;opacity:.9}
-.decRow{display:flex;align-items:center;justify-content:center;gap:8px;color:#8FA998;font-family:'Great Vibes',cursive;font-size:22px;margin:8px 0}
+.decRow{display:flex;align-items:center;justify-content:center;gap:8px;color:#8FA998;font-family:'Great Vibes',cursive;font-size:22px;margin:8px 0;max-width:380px}
 .decRow::before,.decRow::after{content:'❧';font-size:12px}
-.week{display:grid;grid-template-columns:repeat(7,1fr);font-size:8px;text-align:center;color:#8FA998;font-weight:600;padding:3px 0}
+.week{display:grid;grid-template-columns:repeat(7,1fr);font-size:8px;text-align:center;color:#8FA998;font-weight:600;padding:3px 0;max-width:380px}
 .cal{border:1px solid #E8E0D0;border-radius:4px;display:grid;grid-template-columns:repeat(7,1fr);overflow:hidden;max-width:380px}
 .cal div{padding:5px 1px;text-align:center;font-size:9px;color:#5A6B59;border:.3px solid #F0EADF}
-.circ{position:relative;font-weight:800;background:white}.circ::after{content:'';position:absolute;inset:2px;border:1.5px solid #6B7F6F;border-radius:50%}
-.info{margin-top:10px;display:flex;gap:6px;font-size:10px;color:#6B7F6F;align-items:center}
+.circ{position:relative;font-weight:800;background:#fff}.circ::after{content:'';position:absolute;inset:2px;border:1.5px solid #6B7F6F;border-radius:50%}
+.info{margin-top:10px;display:flex;gap:6px;font-size:11px;color:#6B7F6F;align-items:center}
+.lnk{color:#6B7F6F;font-size:11px;font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.btn{background:#6B7F6F;color:#fff;border:none;border-radius:20px;padding:8px 14px;font-size:10px;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit}
+.btn.alt{background:#E8D5A8;color:#4A5A4B}
+.sec{margin-top:18px;max-width:380px}
+.sec h4{font-family:'Cormorant Garamond',serif;color:#8FA998;font-size:20px;margin-bottom:6px}
+.sec p,.sec li{font-size:11px;color:#5A6B59;line-height:1.6}
+.sec ul{list-style:none}
+.gift{background:#F6F1E4;border:1px dashed #C9A86A;border-radius:12px;padding:12px}
+.gallery{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:6px}
+.gallery img{height:150px;width:auto;border-radius:10px;scroll-snap-align:center;flex:0 0 auto}
 .photoWrap{display:flex;justify-content:center;margin:18px 0 10px}
 .coupleCircle{width:280px;height:280px;border-radius:50%;border:4px solid #E8D5A8;overflow:hidden;background:#8FA998;box-shadow:0 8px 25px rgba(0,0,0,.12)}
 .coupleCircle img{width:100%;height:100%;object-fit:cover;display:block}
 .footerText{font-family:'Dancing Script',cursive;text-align:center;color:#6B7F6F;font-size:13px;line-height:1.4;margin-top:8px;font-style:italic}
-.right{flex:.85;background:#6B7F6F!important;padding:22px;display:flex;flex-direction:column;justify-content:center}
+.made{text-align:center;font-size:9px;margin-top:14px;color:#8FA998}.made a{color:#6B7F6F;font-weight:600}
+.right{flex:.85;background:#6B7F6F;padding:22px;display:flex;flex-direction:column;justify-content:center}
 .right h3{font-family:'Cormorant Garamond',serif;color:#E8D5A8;text-align:center;font-size:21px}
-.right p{color:rgba(255,255,255,.7);text-align:center;font-size:9px;margin:6px 0 16px;line-height:1.4}
-.right input,.right textarea{width:100%;background:#FFFEF9;border:none;border-radius:20px;padding:10px 14px;font-size:11px;margin-bottom:10px;outline:none}
-.right button{background:#E8D5A8!important;color:#4A5A4B!important;border:none;padding:9px;border-radius:20px;font-size:11px;font-weight:700;width:55%;margin:8px auto 0;display:block;cursor:pointer}
+.right p{color:rgba(255,255,255,.7);text-align:center;font-size:9px;margin:6px 0 14px;line-height:1.4}
+.right input,.right textarea,.right select{width:100%;background:#FFFEF9;border:none;border-radius:20px;padding:10px 14px;font-size:11px;margin-bottom:10px;outline:none;font-family:inherit}
+.right button{background:#E8D5A8;color:#4A5A4B;border:none;padding:9px;border-radius:20px;font-size:11px;font-weight:700;width:55%;margin:8px auto 0;display:block;cursor:pointer}
+.rsvp{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid rgba(232,213,168,.4)}
+.ok{color:#E8D5A8;text-align:center;font-size:11px;margin-top:8px}
+.formBtn{display:block;text-align:center;background:#E8D5A8;color:#4A5A4B;padding:12px;border-radius:20px;font-size:12px;font-weight:700;text-decoration:none;margin-bottom:12px}
+.formFrame{width:100%;height:420px;border:none;border-radius:12px;background:#fff}
 .hearts{color:#E8D5A8;text-align:center;margin-top:10px;font-size:10px;letter-spacing:2px}
-.list{margin-top:12px;max-height:110px;overflow:auto;display:flex;flex-direction:column;gap:6px}
-.cardItem{background:rgba(255,255,255,.15);border-left:3px solid #E8D5A8;padding:7px 9px;border-radius:6px;color:white;font-size:10px}
+.list{margin-top:12px;max-height:130px;overflow:auto;display:flex;flex-direction:column;gap:6px}
+.cardItem{background:rgba(255,255,255,.15);border-left:3px solid #E8D5A8;padding:7px 9px;border-radius:6px;color:#fff;font-size:10px}
 #backBtn{position:fixed;right:18px;bottom:18px;background:#0B2E1E;color:#fff;border:none;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600;z-index:30;display:none}
 #page2.on ~ #backBtn{display:block}
-@media(max-width:850px){.cardWrap{flex-direction:column}.coupleCircle{width:240px;height:240px}.n1{font-size:50px}.n2{font-size:36px}}
+#musicBtn{position:fixed;left:18px;bottom:18px;background:#0B2E1E;color:#E8D5A8;border:none;width:42px;height:42px;border-radius:50%;cursor:pointer;z-index:30;display:none;font-size:16px}
+@media(max-width:850px){
+  .cardWrap{flex-direction:column;min-height:auto}
+  .coupleCircle{width:240px;height:240px}
+  .n1{font-size:50px}.n2{font-size:36px}
+  .countdown,.cal,.week,.sec,.decRow{max-width:100%;width:100%}
+  #page2{padding:10px}
+  .right{padding:20px 16px}
+  .formFrame{height:480px}
+}
 </style>
 </head>
 <body>
 <div id="page1">
   <div class="outer"><div class="mid"><div class="inner">
     <div class="rings"></div>
+    <div class="dear" id="dear"></div>
     <div class="topT">A WEDDING CELEBRATION</div>
-    <div class="n2">BAKATEL &</div>
+    <div class="n2">BAKATEL &amp;</div>
     <div class="n1">Juliet</div>
     <div class="curved">Are getting married!!!</div>
     <button class="tap" onclick="go()">Tap to open..</button>
   </div></div></div>
 </div>
 <div id="trans"><div class="goldBar"></div></div>
+
 <div id="page2">
   <div class="cardWrap">
     <div class="left">
@@ -82,41 +110,131 @@ body{font-family:'Poppins',sans-serif;background:#0B2318;height:100vh;overflow:h
       </div>
       <div class="decRow">December</div>
       <div class="week"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
-      <div class="cal"><div>1</div><div>2</div><div>3</div><div>4</div><div class="circ">5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div></div>
+      <div class="cal" id="cal"></div>
       <div class="info">🕘 10:00 am</div>
-      <div class="info">📍 New Creation Chapel Int., Tesano </div>
-      <a href="https://share.google/5Px5aFFMwGoweVzXX" target="_blank">
-           View On Google Maps
-      </a>
-    
+      <div class="info">📍 New Creation Chapel Int., Tesano</div>
+      <a class="lnk" href="https://share.google/5Px5aFFMwGoweVzXX" target="_blank" rel="noopener">View On Google Maps</a>
+
+      <div class="btns">
+        <a class="btn" id="gcal" target="_blank" rel="noopener">📅 Google Calendar</a>
+        <button class="btn" onclick="dlIcs()">⬇ Add to Phone Calendar</button>
+        <button class="btn alt" onclick="shareWA()">Share on WhatsApp</button>
+      </div>
+
+      <div class="sec">
+        <h4>Event Details</h4>
+        <ul id="details"></ul>
+      </div>
+
+      <div class="sec gift" id="giftSec">
+        <h4>Support the Couple 🎁</h4>
+        <p id="giftTxt"></p>
+        <div class="btns"><button class="btn" onclick="copyMomo()">Copy MoMo Number</button><a class="btn alt" id="payLink" target="_blank" rel="noopener" style="display:none">Pay with Card / MoMo</a></div>
+      </div>
+
+      <div class="sec" id="galSec" style="max-width:100%">
+        <h4>Our Story in Pictures</h4>
+        <div class="gallery" id="gallery"></div>
+      </div>
+
       <div class="photoWrap"><div class="coupleCircle"><img id="couplePhoto" src="wed.png" alt="Couple Hands"></div></div>
       <div class="footerText">Your presence would make our day even more special.<br>Formal invitation to follow.</div>
+      <div class="made">Invite designed by <a id="madeBy" href="#" target="_blank" rel="noopener">YOUR NAME</a></div>
     </div>
+
     <div class="right">
-      <h3>Share Your Wishes</h3>
-      <p>Leave a sweet note for the couple to read on<br>their special day</p>
-      <input id="n" placeholder="Enter your name..."><textarea id="msg" rows="3" placeholder="Share your wishes, advice, or love..."></textarea>
-      <button onclick="add()">Send Wishes</button>
+      <h3>RSVP &amp; Share Your Wishes</h3>
+      <p>Please confirm attendance and leave a wish<br>for the couple</p>
+      <a class="formBtn" id="formBtn" target="_blank" rel="noopener">📝 Open Google Form</a>
+      <iframe class="formFrame" id="formFrame" title="RSVP form">Loading…</iframe>
+      <div class="rsvp" style="margin-top:18px;border:none">
+        <h3>Prefer WhatsApp?</h3>
+        <p>Send your RSVP straight to the couple</p>
+        <input id="rn" placeholder="Your name...">
+        <select id="ra"><option value="Attending">Joyfully attending</option><option value="Not attending">Sorry, can't make it</option></select>
+        <input id="rg" type="number" min="1" max="10" value="1" placeholder="Number of guests (including you)">
+        <button onclick="rsvpWA()">RSVP on WhatsApp</button>
+      </div>
       <div class="hearts">♥ ♥ ♥</div>
-      <div class="list" id="list"></div>
     </div>
   </div>
 </div>
-<button id="backBtn"><<<</button>
+<button id="backBtn">&lt;&lt;&lt;</button>
+<button id="musicBtn" onclick="toggleMusic()" aria-label="Music">♪</button>
+<audio id="bgm" loop preload="none"></audio>
+
 <script>
+/* ========= EDIT THESE PER CLIENT ========= */
+const CFG={
+  FORM_URL:"https://docs.google.com/forms/d/e/1FAIpQLSeCiscz5LpOLjhh0_c1HWtu_ifpC76DZFarI3MBQa-hkz7BCg/viewform",   // Google Form: RSVP + wishes go to its Responses sheet
+  COUPLE_WA:"233547833766",         // couple's WhatsApp number, international format, no +
+  EVENT:{title:"Bakatel & Juliet's Wedding",start:"20261205T100000Z",end:"20261205T160000Z",place:"New Creation Chapel Int., Tesano, Accra",date:"2026-12-05T10:00:00"},
+  INVITE_URL:"",                    // final live link; empty = current page link
+  MUSIC_URL:"",                     // e.g. "music.mp3" (empty hides the music button)
+  MOMO:{number:"0547833766",name:"Juliet Oforiwaa Osae",network:"MTN MoMo"},
+  PAY_LINK:"",                      // optional Paystack payment page link
+  DETAILS:[
+    ["👗 Dress code","Elegant – shades of green & gold"],
+    ["🥂 Reception","New Creation Chapel International, Tesano"],
+    ["📞 Coordinator","0206834470"]
+  ],
+  GALLERY:["wed.png"],              // add more photo files/links
+  MADE_BY:{name:"Philemon Osae",link:"https://philemon-portfolio-ten.vercel.app"}
+};
+/* ========================================= */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const guest=(new URLSearchParams(location.search).get('guest')||'').trim().slice(0,40);
+const inviteUrl=()=>CFG.INVITE_URL||location.origin+location.pathname;
+
+/* Guest personalisation + open tracking */
+if(guest){$('dear').textContent='Dear '+guest+',';$('rn').value=guest;}
+
+/* Calendar: Dec 1 2026 is a Tuesday -> 2 blank cells */
+(function(){let h='<div></div><div></div>';for(let i=1;i<=31;i++)h+=`<div${i==5?' class="circ"':''}>${i}</div>`;$('cal').innerHTML=h;})();
+
+/* Open animation + music */
 function go(){
-  let t=document.getElementById('trans');t.style.display='grid';
+  let t=$('trans');t.style.display='grid';
   for(let i=0;i<16;i++){let e=document.createElement('div');e.className='hrt';e.textContent=['🌿','💚','✨','💛'][i%4];e.style.setProperty('--x',(Math.random()*400-200)+'px');e.style.left=(45+Math.random()*10)+'%';e.style.animationDelay=(i*0.07)+'s';t.appendChild(e);}
-  setTimeout(()=>{document.getElementById('page1').style.transform='translateY(-115%)';document.getElementById('page2').classList.add('on');setTimeout(()=>{t.style.display='none';t.innerHTML='<div class="goldBar"></div>'},800)},1300);
+  setTimeout(()=>{$('page1').style.transform='translateY(-115%)';$('page2').classList.add('on');setTimeout(()=>{t.style.display='none';t.innerHTML='<div class="goldBar"></div>'},800)},1300);
+  if(CFG.MUSIC_URL){const a=$('bgm');a.src=CFG.MUSIC_URL;a.play().then(()=>$('musicBtn').textContent='❚❚').catch(()=>{});}
 }
-const target=new Date("December 5, 2026 10:00:00").getTime();
-setInterval(()=>{let now=new Date().getTime(),diff=target-now;if(diff<0)diff=0;document.getElementById('d').innerText=Math.floor(diff/86400000);document.getElementById('h').innerText=String(Math.floor(diff%86400000/3600000)).padStart(2,'0');document.getElementById('m').innerText=String(Math.floor(diff%3600000/60000)).padStart(2,'0');document.getElementById('s').innerText=String(Math.floor(diff%60000/1000)).padStart(2,'0');},1000);
-function add(){let n=document.getElementById('n').value.trim(),m=document.getElementById('msg').value.trim();if(!n||!m)return alert('Enter name & wish');let a=JSON.parse(localStorage.getItem('final_complete')||'[]');a.unshift({n,m});localStorage.setItem('final_complete',JSON.stringify(a));document.getElementById('n').value='';document.getElementById('msg').value='';render();}
-function render(){let a=JSON.parse(localStorage.getItem('final_complete')||'[]');document.getElementById('list').innerHTML=a.map(x=>`<div class="cardItem"><b style="color:#E8D5A8">${x.n}</b><br>${x.m}</div>`).join('')||''}render();
-document.getElementById('backBtn').addEventListener('click',()=>{
-  document.getElementById('page2').classList.remove('on');
-  document.getElementById('page1').style.transform='translateY(0)';
-});
+if(CFG.MUSIC_URL)$('musicBtn').style.display='block';
+function toggleMusic(){const a=$('bgm');if(!a.src)a.src=CFG.MUSIC_URL;if(a.paused){a.play();$('musicBtn').textContent='❚❚'}else{a.pause();$('musicBtn').textContent='♪'}}
+$('page2').addEventListener('transitionend',()=>{});
+
+/* Countdown */
+const target=new Date(CFG.EVENT.date).getTime();
+setInterval(()=>{let diff=Math.max(0,target-Date.now());$('d').innerText=Math.floor(diff/86400000);$('h').innerText=String(Math.floor(diff%86400000/3600000)).padStart(2,'0');$('m').innerText=String(Math.floor(diff%3600000/60000)).padStart(2,'0');$('s').innerText=String(Math.floor(diff%60000/1000)).padStart(2,'0');},1000);
+
+/* Add to calendar */
+const E=CFG.EVENT;
+$('gcal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(E.title)+'&dates='+E.start+'/'+E.end+'&location='+encodeURIComponent(E.place)+'&details='+encodeURIComponent('Formal invitation to follow.');
+function dlIcs(){
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Invite//EN','BEGIN:VEVENT','UID:'+E.start+'@invite','DTSTAMP:'+E.start,'DTSTART:'+E.start,'DTEND:'+E.end,'SUMMARY:'+E.title,'LOCATION:'+E.place,'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='wedding.ics';a.click();
+}
+
+/* WhatsApp */
+function shareWA(){window.open('https://wa.me/?text='+encodeURIComponent('You are invited to the wedding of Bakatel & Juliet! 💚 Saturday, 5 December 2026, 10:00 am, New Creation Chapel Int., Tesano.\n'+inviteUrl()),'_blank');}
+function rsvpWA(){
+  const n=$('rn').value.trim()||guest||'A guest';
+  window.open('https://wa.me/'+CFG.COUPLE_WA+'?text='+encodeURIComponent(`Hello! This is ${n}. ${$('ra').value==='Attending'?'I will be attending':'I regret I cannot attend'} the wedding on 5 Dec.${$('ra').value==='Attending'?' Guests: '+($('rg').value||1)+'.':''}`),'_blank');
+}
+
+/* Details, gift, gallery, footer */
+$('details').innerHTML=CFG.DETAILS.map(d=>`<li><b>${esc(d[0])}:</b> ${esc(d[1])}</li>`).join('');
+$('giftTxt').textContent=`Your presence is the greatest gift. If you wish to bless us further: ${CFG.MOMO.network} – ${CFG.MOMO.number} (${CFG.MOMO.name}).`;
+if(CFG.PAY_LINK){$('payLink').href=CFG.PAY_LINK;$('payLink').style.display='inline-block';}
+function copyMomo(){navigator.clipboard&&navigator.clipboard.writeText(CFG.MOMO.number).then(()=>alert('MoMo number copied'));}
+if(CFG.GALLERY.length)$('gallery').innerHTML=CFG.GALLERY.map(s=>`<img src="${esc(s)}" alt="Couple" loading="lazy">`).join('');else $('galSec').style.display='none';
+$('madeBy').textContent=CFG.MADE_BY.name;$('madeBy').href=CFG.MADE_BY.link;
+
+/* Google Form */
+$('formBtn').href=CFG.FORM_URL;$('formFrame').src=CFG.FORM_URL+'?embedded=true';
+
+$('backBtn').addEventListener('click',()=>{$('page2').classList.remove('on');$('page1').style.transform='translateY(0)';});
 </script>
 </body>
 </html>
